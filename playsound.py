@@ -1,11 +1,11 @@
 import pygame
+def playsound(filename):
+    pygame.mixer.init()
 
-pygame.mixer.init()
+    pygame.init()
 
-pygame.init()
+    pygame.mixer.music.load(filename)
+    pygame.mixer.music.play()
 
-pygame.mixer.music.load("1.mp3")
-pygame.mixer.music.play()
-
-pygame.mixer.music.stop()
-pygame.mixer.quit()
+   #pygame.mixer.music.stop()
+    #pygame.mixer.quit()
